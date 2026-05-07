@@ -9,5 +9,5 @@
   
   "theme_color": "#eeffee",
   "background_color": "#eeffee",
-  "display": "fullscreen",
+  "display": "standalone",
 }
