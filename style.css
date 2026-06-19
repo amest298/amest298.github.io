@@ -12,6 +12,9 @@ ul {
   padding: 0;
   font-family: monospace;
 }
+p {
+	font-size: 40px;
+}
 li,
 legend {
   list-style-type: none;
