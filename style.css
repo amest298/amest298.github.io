@@ -67,7 +67,14 @@ ul {
 		font-size: 25px;
 		display: block;
 		width: 90%;
+		height: 7.6%;
 		
+	}
+	
+	.mobilenav a:hover {
+		background-color: #7C3C4A;
+		color: #cf975d;
+
 	}
 
 	.mobilenav a.icon {
@@ -78,22 +85,8 @@ ul {
 		right: 0;
 		top: 0;
 		background-color: #b988e0;
-		color: #FFFFFF;
 	}
 
-	.mobilenav a:hover {
-		background-color: #7C3C4A;
-		color: #cf975d;
-
-	}
-	.mobilenav a.icon {
-		display: block;
-		position: absolute;
-		height: 7.6%;
-		width: 10%;
-		right: 0;
-		top: 0;
-	}
 	
 	.mobilenav {
 		display: none;
