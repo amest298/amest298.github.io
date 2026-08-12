@@ -109,7 +109,7 @@ ul {
 	
 	@media only screen and (max-width: 690px) {
           body {
-                        background-color: #e8edea;
+                        background-color: #42f54e;
 		  }
 						
 		ul {
@@ -126,6 +126,7 @@ ul {
 		
 		.mobilenav {
 		display: block;
-		height: 11%
+		height: 11%;
+		
 	}
 	
