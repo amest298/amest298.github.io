@@ -20,7 +20,7 @@ ul {
 		margin: 0;
 		padding: 0;
 		overflow: hidden;
-		background-color: 004225;
+		background-color: #69418a;
 		position: fixed;
 		float: left;
 		top: 0;
@@ -41,7 +41,6 @@ ul {
 		text-align: center;
 		padding: 17px;
 		text-decoration: none;
-		font-family: "Cinzel";
 		font-size: 30px;
 		text-align: center;
 	}
@@ -57,7 +56,7 @@ ul {
 	.mobilenav #myLinks {
 		display: none;
 		font-family: "Cinzel";
-		background-color: #8a4252;
+		background-color: #69418a;
 	}
 
 	.mobilenav a {
@@ -89,7 +88,6 @@ ul {
 		display: none;
 		overflow: hidden;
 		text-align: center;
-		font-family: "Cinzel";
 		
 	}
 	
