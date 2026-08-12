@@ -3,12 +3,8 @@ body {
   background-color: #b988e0;
   margin: 0;
 }
-ul,
-fieldset,
-legend {
-  border: 1px solid;
-  background-color: white;
-}
+
+
 ul {
   padding: 0;
   font-family: monospace;
@@ -55,5 +51,79 @@ ul {
 	
 	a:link {
 	color: #EEEEEE;
+	}
+	
+	
+	.mobilenav #myLinks {
+		display: none;
+		font-family: "Cinzel";
+		background-color: #8a4252;
+	}
+
+	.mobilenav a {
+		color: #cf975d;
+		padding: 10px 20px;
+		text-decoration: none;
+		text-align: center;
+		font-size: 50px;
+		display: block;
+		width: 100%;
+	}
+
+	.mobilenav a.icon {
+		display: block;
+		position: absolute;
+		height: 7.6%;
+		width: 10%;
+		right: 0;
+		top: 0;
+	}
+
+	.mobilenav a:hover {
+		background-color: #7C3C4A;
+		color: #cf975d;
+
+	}
+	
+	.mobilenav {
+		display: none;
+		overflow: hidden;
+		text-align: center;
+		font-family: "Cinzel";
+		
+	}
+	
+@media only screen and (max-height: 730px) {
+		
+		ul {
+			height: 11.7%;
+		}
+		
+	}
+	
+	@media only screen and (max-width: 690px) {
+          body {
+                        background-color: #e8edea;
+						
+		
+	
+	.active {
+		height: 11%;
+	}
+	
+		ul {
+		display: none;
+          }
+		  
+		li {
+		display: none;
+		}
+		
+		.breaks {
+			display: none;
+		}
+		
+		.mobilenav {
+		display: block;
 	}
 	

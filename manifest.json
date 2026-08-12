@@ -1,8 +1,8 @@
 {
   
-  "name": "Voting App",
-  "short_name": "VApp",
-  "description": "pls vote",
+  "name": "On A Roll - Voter Information App",
+  "short_name": "VoteApp",
+  "description": "An app to help inform people about voting",
 
 	"icons": [
 	{
@@ -21,7 +21,7 @@
   "start_url": "./",
   
   
-  "theme_color": "#eeffee",
-  "background_color": "#eeffee",
+  "theme_color": "#d0a8f0",
+  "background_color": "##d0a8f0",
   "display": "standalone"
 }
