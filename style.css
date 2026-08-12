@@ -83,6 +83,14 @@ ul {
 		color: #cf975d;
 
 	}
+	.mobilenav a.icon {
+		display: block;
+		position: absolute;
+		height: 7.6%;
+		width: 10%;
+		right: 0;
+		top: 0;
+	}
 	
 	.mobilenav {
 		display: none;
@@ -105,9 +113,7 @@ ul {
 						
 		
 	
-	.active {
-		height: 11%;
-	}
+	
 	
 		ul {
 		display: none;
@@ -123,5 +129,6 @@ ul {
 		
 		.mobilenav {
 		display: block;
+		height: 11%
 	}
 	
