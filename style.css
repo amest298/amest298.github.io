@@ -64,9 +64,10 @@ ul {
 		padding: 10px 20px;
 		text-decoration: none;
 		text-align: center;
-		font-size: 50px;
+		font-size: 25px;
 		display: block;
-		width: 100%;
+		width: 90%;
+		
 	}
 
 	.mobilenav a.icon {
@@ -76,6 +77,8 @@ ul {
 		width: 10%;
 		right: 0;
 		top: 0;
+		background-color: #b988e0;
+		color: #FFFFFF;
 	}
 
 	.mobilenav a:hover {
@@ -95,7 +98,7 @@ ul {
 	.mobilenav {
 		display: none;
 		overflow: hidden;
-		text-align: center;
+	
 		
 	}
 	
@@ -108,9 +111,9 @@ ul {
 	}
 	
 	@media only screen and (max-width: 690px) {
-          body {
-                        background-color: #42f54e;
-		  }
+         body {
+               background-color: #42f54e;
+		 }
 						
 		ul {
 			display: none;
@@ -127,6 +130,7 @@ ul {
 		.mobilenav {
 		display: block;
 		height: 11%;
+		
 		
 	}
 	
