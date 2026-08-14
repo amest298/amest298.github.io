@@ -21,7 +21,7 @@ p {
   font-style: normal;
 }
 
-ul {
+	ul {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
@@ -74,14 +74,13 @@ ul {
 		text-align: center;
 		font-size: 25px;
 		display: block;
-		width: 90%;
-		height: 20%;
+		width: 100%;
+		height: 50%;
 		
 	}
 	
 	.mobilenav a:hover {
-		background-color: #7C3C4A;
-		color: #cf975d;
+		background-color: #8e5eb5;
 
 	}
 
@@ -93,13 +92,12 @@ ul {
 		width: 10%;
 		right: 0;
 		top: 0;
-		background-color: #ed6180;
+		background-color: #69418a;
 	}
 
 	
 	.mobilenav {
 		display: none;
-		overflow: hidden;
 	
 		
 	}
@@ -113,26 +111,34 @@ ul {
 	}
 	
 	@media only screen and (max-width: 690px) {
-         body {
-               background-color: #b988e0;
-		 }
-						
-		ul {
+		body {
+			background-color: #b988e0;
+			height: 100%;
+			width: 100%;
+			}
+				
+		ul, li, .breaks {
 			display: none;
-		}
-		  
-		li {
-		display: none;
-		}
-		
-		.breaks {
-			display: none;
-		}
-		
+			}
+	
 		.mobilenav {
-		display: block;
-		height: 20%;
-		
-		
+			display: block;
+			position: fixed;
+			width: 100%;
+			height: 15%; 
+			font-size: 40px;
+				}
+				
+		.active  {
+			height: 11%;
+		}
+				
+		.mobilenav a.icon {
+		height: 45%;
+		padding-top: 15px;
 	}
+	
+	
+		}
+	
 	
