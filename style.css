@@ -136,7 +136,9 @@ p {
 			font-size: px;
 			text-align: left;
 				}
-			
+		.mobilenav #myLinks {
+			display: block;
+		}
 			
 		.active  {
 			height: 11%;
@@ -155,7 +157,7 @@ p {
 	}
 	
 	.card {
-		display: fixed;
+		display: block;
 	}
 		}
 	
