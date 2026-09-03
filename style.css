@@ -141,6 +141,12 @@ a:link, a:visited {
     text-align: left;
   }
 
+	.collapsible {
+		height: 30%;
+	}
+
+
+
   .breaks1, .card {
     display: block;
   }
