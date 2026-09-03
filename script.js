@@ -1,39 +1,29 @@
 function getDOB() {
-    // Get the DOB value from the input field
-    const dobInput = document.getElementById('inputDob').value;
+  const dobInput = document.getElementById('inputDob').value;
 
-    // Validate if DOB is provided
-    if (!dobInput) {
-        alert('Please enter your Date of Birth.');
-        return;
-    }
+  if (!dobInput) {
+    alert('Please enter your Date of Birth.');
+    return;
+  }
 
-    // Convert DOB input to a Date object
-    const dob = new Date(dobInput);
-    
-    // Set the fixed target end date (November 7, 2026)
-    const currentDate = new Date('2026-11-07');
+  const dob = new Date(dobInput);
+  const currentDate = new Date('2026-11-07');
 
-    // Calculate age
-    let age = currentDate.getFullYear() - dob.getFullYear();
-    const monthDifference = currentDate.getMonth() - dob.getMonth();
+  let age = currentDate.getFullYear() - dob.getFullYear();
+  const monthDifference = currentDate.getMonth() - dob.getMonth();
 
-    // Adjust age if the birthday hasn't occurred yet by Nov 7 of that year
-    if (monthDifference < 0 || (monthDifference === 0 && currentDate.getDate() < dob.getDate())) {
-        age--;
-    }
+  if (monthDifference < 0 || (monthDifference === 0 && currentDate.getDate() < dob.getDate())) {
+    age--;
+  }
 
-    // Select the output element
-    const resultElement = document.getElementById('currentAge');
+  const resultElement = document.getElementById('currentAge');
 
-    // Display the result conditionally using template literals (backticks)
-    if (age >= 18) {
-        resultElement.textContent = `Your age on Nov 7, 2026 will be ${age} years. You will be old enough to vote in the 2026 General Election!`;
-    } else {
-        resultElement.textContent = `Your age on Nov 7, 2026 will be ${age} years. You will not be old enough to vote in the 2026 General Election.`;
-    }
+  if (age >= 18) {
+    resultElement.textContent = `Your age on Nov 7, 2026 will be ${age} years. You will be old enough to vote in the 2026 General Election!`;
+  } else {
+    resultElement.textContent = `Your age on Nov 7, 2026 will be ${age} years. You will not be old enough to vote in the 2026 General Election.`;
+  }
 }
-
 
 function myFunction() {
   var x = document.getElementById("myLinks");
@@ -43,3 +33,20 @@ function myFunction() {
     x.style.display = "block";
   }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  var coll = document.getElementsByClassName("collapsible");
+  var i;
+
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function () {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
+  }
+});

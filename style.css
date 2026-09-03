@@ -1,165 +1,147 @@
-.rokkitt-<uniquifier> {
+body {
+  margin: 0;
+  background-color: #b988e0;
   font-family: "Rokkitt", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
 }
-
-
-	body {
-		margin: 1vh 1vw;
-		background-color: #b988e0;
-		margin: 0;
-		font-family: "Rokkitt";
-}
-
-
 
 p {
-	font-size: 40px;
-	
+  font-size: 40px;
 }
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #69418a;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 10%;
+  color: #FFFFFF;
+  font-family: "Rokkitt", serif;
+}
 
+li {
+  float: left;
+  width: 33.333%;
+  height: 100%;
+}
 
-	ul {
-		list-style-type: none;
-		margin: 0;
-		padding: 0;
-		overflow: hidden;
-		background-color: #69418a;
-		position: fixed;
-		float: left;
-		top: 0;
-		width: 100%;
-		height: 10%;
-		color: #FFFFFF;
-		font-family: "Rokkitt";
+li a {
+  display: block;
+  text-align: center;
+  padding: 17px;
+  text-decoration: none;
+  font-size: 30px;
+}
 
-	}
+a:link, a:visited {
+  color: #EEEEEE;
+}
 
-	li {
-		float: left;
-		width: 33.333%;
-		height: 100%;
+.mobilenav #myLinks {
+  display: none;
+  font-family: "Rokkitt", serif;
+  background-color: #69418a;
+  color: #f2f5ea;
+}
 
-	}
+.mobilenav a {
+  color: #f2f5ea;
+  font-family: "Rokkitt", serif;
+  padding: 10px 20px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 33px;
+  display: block;
+  width: 100%;
+}
 
-	li a {
-		display: block;
-		text-align: center;
-		padding: 17px;
-		text-decoration: none;
-		font-size: 30px;
-		text-align: center;
-	}
-	a:visited {
-	color: #EEEEEE;
-	}
-	
-	a:link {
-	color: #EEEEEE;
-	}
-	
-	
-	.mobilenav #myLinks {
-		display: none;
-		font-family: "Rokkitt";
-		background-color: #69418a;
-		color: #f2f5ea;
-	}
+.mobilenav a:hover {
+  background-color: #8e5eb5;
+}
 
-	.mobilenav a {
-		color: #f2f5ea;
-		font-family: "Rokkitt";
-		padding: 10px 20px;
-		text-decoration: none;
-		text-align: center;
-		font-size: 33px;
-		display: block;
-		width: 100%;
-		height: 50%;
-		
-	}
-	
-	.mobilenav a:hover {
-		background-color: #8e5eb5;
+.mobilenav a.icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 3.7%;
+  width: 10%;
+  background-color: #69418a;
+}
 
-	}
+.mobilenav, .breaks1 {
+  display: none;
+}
 
-	.mobilenav a.icon {
-		display: block;
-		position: absolute;
-		float: right;
-		height: 3.7%;
-		width: 10%;
-		right: 0;
-		top: 0;
-		background-color: #69418a;
-	}
+.card {
+  text-align: center;
+}
 
-	
-	.mobilenav, .breaks1 {
-		display: none;
-	}
-	
-	.card {
-		text-align: center;
-	}
+.collapsible {
+  background-color: #69418a;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 18px;
+}
 
-	
+.collapsible.active, .collapsible:hover {
+  background-color: #8e5eb5;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+.information {
+	width: 80%;
+	padding-left: 10%;
+	padding-right: 10%;
+}
 @media only screen and (max-height: 730px) {
-		
-		ul {
-			height: 11.7%;
-		}
-		
-	}
-	
-	@media only screen and (max-width: 690px) {
-		body {
-			background-color: #b988e0;
-			height: 100%;
-			width: 100%;
-			}
-				
-		ul, li, .breaks {
-			display: none;
-			}
-			
-			
-		.mobilenav a.icon {
-		height: 20%;
-		padding-top: 10px;
-		float: right;
-		text-align: center;
-	}
-	
-	
-		.mobilenav {
-			display: block;
-			position: fixed;
-			width: 100%;
-			height: 15%; 
-			font-size: 20px;
-			text-align: left;
-				}
-		
-			
-		.active  {
-			height: 20%;
-			text-align: left;
-		}
-				
-		
-	
-	.breaks1 {
-		display: block;
-	}
-	
-	.card {
-		display: block;
-	}
-		}
-	
-	
+  ul {
+    height: 11.7%;
+  }
+}
+
+@media only screen and (max-width: 690px) {
+  body {
+    background-color: #b988e0;
+    height: 100%;
+    width: 100%;
+  }
+
+  ul, li, .breaks {
+    display: none;
+  }
+
+  .mobilenav a.icon {
+    height: 30%;
+    padding-top: 10px;
+    float: right;
+    text-align: center;
+  }
+
+  .mobilenav {
+    display: block;
+    position: fixed;
+    width: 100%;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .breaks1, .card {
+    display: block;
+  }
+}
