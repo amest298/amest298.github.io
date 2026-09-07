@@ -19,9 +19,9 @@ function getDOB() {
   const resultElement = document.getElementById('currentAge');
 
   if (age >= 18) {
-    resultElement.textContent = `Your age on Nov 7, 2026 will be ${age} years. You will be old enough to vote in the 2026 General Election!`;
+    resultElement.textContent = `Your age on Nov 7, 2026 will be ${age} years old. You will be old enough to vote in the 2026 General Election!`;
   } else {
-    resultElement.textContent = `Your age on Nov 7, 2026 will be ${age} years. You will not be old enough to vote in the 2026 General Election.`;
+    resultElement.textContent = `Your age on Nov 7, 2026 will be ${age} years old. You will not be old enough to vote in the 2026 General Election.`;
   }
 }
 
