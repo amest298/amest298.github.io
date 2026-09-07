@@ -4,11 +4,27 @@
 		font-family: "Rokkitt", serif;
 	}
 
-	p {
-		font-size: 40px;
+	h1 {
+		color: #33190d;
+		font-size: 75px;
+		text-align: center;
 	}
 
-	ul /*Navbar on websize*/ {
+
+	p {
+		font-size: 40px;
+		color: #33190d;	
+	}
+	.bodytext {
+		background-color: #FFF4AD;
+		width: 90%;
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	
+		
+	
+	ul /*Navbar on websize. This is only the general styling code (font, height, colour etc. */ {
 		list-style-type: none;
 		margin: 0;
 		padding: 0;
@@ -22,13 +38,13 @@
 		font-family: "Rokkitt", serif;
 	}
 
-	li {
+	li /*This is for each indiviual link to other pages in the navbar*/{
 		float: left;
 		width: 33.333%;
 		height: 100%;
 	}
 
-		li a {
+		li a /*This is for the text inside of the smaller navbar sections.*/{
 		display: block;
 		text-align: center;
 		padding: 17px;
@@ -36,73 +52,73 @@
 		font-size: 30px;
 	}
 
-a:link, a:visited {
-  color: #EEEEEE;
-}
+		a:link, a:visited /*This makes the colour for visited links white.*/{
+			color: #EEEEEE;
+		}
 
-.mobilenav #myLinks {
-  display: none;
-  font-family: "Rokkitt", serif;
-  background-color: #69418a;
-  color: #f2f5ea;
-}
+	.mobilenav #myLinks /*This is for the drop down menu on the mobile display on the navbar*/ {
+		display: none;
+		font-family: "Rokkitt", serif;
+		background-color: #69418a;
+		color: #f2f5ea;
+	}
 
-.mobilenav a {
-  color: #f2f5ea;
-  font-family: "Rokkitt", serif;
-  padding: 10px;
-  text-decoration: none;
-  text-align: left;
-  font-size: 25px;
-  display: block;
-  width: 100%;
-}
+	.mobilenav a /*This is the styling for the text on the mobile navbar*/ {
+		color: #f2f5ea;
+		font-family: "Rokkitt", serif;
+		padding: 10px;
+		text-decoration: none;
+		text-align: left;
+		font-size: 25px;
+		display: block;
+		width: 100%;
+	}
 
-.mobilenav a:hover {
-  background-color: #8e5eb5;
-}
+	.mobilenav a:hover {
+		background-color: #8e5eb5;
+	}
 
-.mobilenav a.icon {
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 3.7%;
-  width: 10%;
-  background-color: #69418a;
-}
+	.mobilenav a.icon {
+		display: block;
+		position: absolute;
+		right: 0;
+		top: 0;
+		height: 3.7%;
+		width: 10%;
+		background-color: #69418a;
+	}
 
-.mobilenav, .breaks1 {
-  display: none;
-}
+	.mobilenav, .breaks1 {
+		display: none;
+	}
 
-.card {
-  text-align: center;
-}
+	.card {
+		text-align: center;
+	}
 
-.collapsible {
-  background-color: #69418a;
-  color: white;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 18px;
-}
+	.collapsible {
+		background-color: #69418a;
+		color: white;
+		cursor: pointer;
+		padding: 18px;
+		width: 100%;
+		border: none;
+		text-align: left;
+		outline: none;
+		font-size: 18px;
+	}
 
-.collapsible.active, .collapsible:hover {
-  background-color: #8e5eb5;
-}
+	.collapsible.active, .collapsible:hover {
+		background-color: #8e5eb5;
+	}
 
-.content {
-  padding: 0 18px;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
-}
+	.content {
+		padding: 0 18px;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
+		background-color: #f1f1f1;
+	}
 
 .information {
 	width: 80%;
