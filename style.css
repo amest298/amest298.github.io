@@ -130,11 +130,14 @@
 			width: 80%;
 			padding-left: 10%;
 			padding-right: 10%;
+			text-align: center;
 	}
 	
 	.information p {
 		font-size: 20px;
 	}
+	
+
 	
 	
 @media only screen and (max-height: 730px) {
