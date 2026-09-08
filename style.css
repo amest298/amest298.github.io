@@ -9,6 +9,11 @@
 		font-size: 60px;
 		text-align: center;
 	}
+	
+	
+	h2 {
+	text-align: center;
+}
 
 
 	p {
@@ -111,6 +116,8 @@
 		text-align: left;
 		outline: none;
 		font-size: 18px;
+		border-style: solid;
+		border-color: #FFF4AD;
 	}
 
 	.collapsible.active, .collapsible:hover {
