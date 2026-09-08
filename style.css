@@ -17,7 +17,7 @@
 
 
 	p {
-		font-size: 40px;
+		font-size: 20px;
 		color: #33190d;	
 	}
 	.bodytext {
@@ -27,7 +27,10 @@
 		padding-right: 10%;
 	}
 	
-		
+	.mobilenav .active {
+		background-color: #b988e0;
+	}
+	
 	
 	ul /*Navbar on websize. This is only the general styling code (font, height, colour etc. */ {
 		list-style-type: none;
@@ -68,9 +71,6 @@
 		color: #f2f5ea;
 	}
 	
-	.mobileactive {
-		background-color: #b988e0;
-	}
 
 	.mobilenav a /*This is the styling for the text on the mobile navbar*/ {
 		color: #f2f5ea;
@@ -144,7 +144,9 @@
 		font-size: 20px;
 	}
 	
-
+	.hometext p {
+		font-size: 40px;
+	}
 	
 	
 @media only screen and (max-height: 730px) {
@@ -154,11 +156,7 @@
 }
 
 @media only screen and (max-width: 690px) {
-  body {
-    background-color: #b988e0;
-    height: 100%;
-    width: 100%;
-  }
+ 
 
   ul, li, .breaks {
     display: none;
@@ -192,5 +190,9 @@
 
   .breaks1, .card {
     display: block;
+  }
+  
+  .information p {
+	  size: 15px;
   }
 }
