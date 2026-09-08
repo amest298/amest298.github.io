@@ -29,6 +29,9 @@
 	
 	.mobilenav .active {
 		background-color: #b988e0;
+		font-family: "Rokkitt";
+		font-weight: 500;
+		color: #33190d;
 	}
 	
 	
@@ -95,6 +98,8 @@
 		height: 3.7%;
 		width: 10%;
 		background-color: #69418a;
+		text-align: center;
+		
 	}
 
 	.mobilenav, .breaks1 {
