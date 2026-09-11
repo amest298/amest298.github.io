@@ -156,6 +156,7 @@
 	.candidatePhotos {
 		width: 20%;
 		text-align: center;
+		margin: auto;
 	}
 	
 	
@@ -206,7 +207,7 @@
 	  size: 15px;
   }
   .candidatePhotos {
-		text-align: center;
+		margin: auto;
 		width: 30%;
   }
 }
