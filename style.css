@@ -200,4 +200,7 @@
   .information p {
 	  size: 15px;
   }
+  .candidatePhotos {
+		width: 80%;
+  }
 }
