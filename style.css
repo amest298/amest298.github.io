@@ -153,6 +153,11 @@
 		font-size: 40px;
 	}
 	
+	.candidatePhotos {
+		width: 20%;
+		text-align: center;
+	}
+	
 	
 @media only screen and (max-height: 730px) {
   ul {
@@ -201,6 +206,7 @@
 	  size: 15px;
   }
   .candidatePhotos {
+		text-align: center;
 		width: 30%;
   }
 }
