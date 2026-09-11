@@ -155,8 +155,8 @@
 	
 	.candidatePhotos {
 		width: 20%;
-		text-align: center;
-		margin: auto;
+		display: flex;
+		justify-content: center;
 	}
 	
 	
@@ -207,7 +207,8 @@
 	  size: 15px;
   }
   .candidatePhotos {
-		margin: auto;
+		display: flex;
+		justify-content: center;
 		width: 30%;
   }
 }
