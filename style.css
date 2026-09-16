@@ -206,9 +206,15 @@
   .information p {
 	  size: 15px;
   }
+  
   .candidatePhotos {
+	  width: 100%;
+  }
+  
+  
+  .candidatePhotos img {
 		display: flex;
 		justify-content: center;
-		width: 30%;
+		width: 70%;
   }
 }
