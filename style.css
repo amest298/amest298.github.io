@@ -154,10 +154,14 @@
 	}
 	
 	.candidatePhotos {
-		width: 20%;
-		display: flex;
-		justify-content: center;
+		width: 100%;
+		
 	}
+	
+	 .candidatePhotos img {
+		justify-content: center;
+		width: 20%;
+  }
 	
 	
 @media only screen and (max-height: 730px) {
