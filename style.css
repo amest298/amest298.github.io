@@ -162,6 +162,16 @@
 		justify-content: center;
 		width: 20%;
   }
+  
+  
+  .logohome {
+	  width: 100%;
+  }
+  
+  .logohome img {
+	  width: 80%;
+	  text-align: center;
+  }
 	
 	
 @media only screen and (max-height: 730px) {
