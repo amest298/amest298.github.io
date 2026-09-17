@@ -166,11 +166,13 @@
   
   .logohome {
 	  width: 100%;
+	  display: flex;
+	justify-content: center;
   }
   
   .logohome img {
 	  width: 80%;
-	  text-align: center;
+	
   }
 	
 	
@@ -223,12 +225,26 @@
   
   .candidatePhotos {
 	  width: 100%;
+	  display: block;
+		justify-content: center;
   }
   
   
   .candidatePhotos img {
-		display: flex;
-		justify-content: center;
+		
 		width: 70%;
   }
 }
+
+
+
+ .logohome {
+	  width: 100%;
+	  display: flex;
+	justify-content: center;
+  }
+  
+  .logohome img {
+	  width: 100%;
+	
+  }
