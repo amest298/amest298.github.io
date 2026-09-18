@@ -125,10 +125,7 @@
 		border-color: #FFF4AD;
 	}
 
-	.collapsible.active, .collapsible:hover {
-		background-color: #8e5eb5;
-		
-	}
+	
 
 	.content {
 		padding: 0 18px;
@@ -171,9 +168,13 @@
   }
   
   .logohome img {
-	  width: 80%;
+	  width: 70%;
 	
   }
+  
+	.opportunity:hover .collapsible {
+  background-color: #42e0f5;
+}
 	
 	
 @media only screen and (max-height: 730px) {
