@@ -173,9 +173,27 @@
   }
   
 	.opportunity:hover .collapsible {
-  background-color: #42e0f5;
+  background-color: #00bcc1;
 }
-	
+
+.national:hover .collapsible {
+	background-color: #00529f;
+}
+
+.labour:hover .collapsible {
+	background-color: #D82A20;
+}
+
+	.act:hover .collapsible   {
+	background-color: #D5067E;
+}
+	 .nzfirst:hover .collapsible {
+		 background-color: #545252;
+	 }
+	 
+	 .green:hover .collapsible {
+		 background-color: #098137;
+	 }
 	
 @media only screen and (max-height: 730px) {
   ul {
