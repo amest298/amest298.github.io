@@ -51,7 +51,7 @@
 
 	li /*This is for each indiviual link to other pages in the navbar*/{
 		float: left;
-		width: 33.333%;
+		width: 25%;
 		height: 100%;
 	}
 
@@ -60,7 +60,7 @@
 		text-align: center;
 		padding: 17px;
 		text-decoration: none;
-		font-size: 30px;
+		font-size: 25px;
 	}
 
 		a:link, a:visited /*This makes the colour for visited links white.*/{
@@ -172,6 +172,16 @@
 	
   }
   
+  .logocandidate {
+	  width: 100%;
+	  display: flex;
+	  justify-content: center;
+  }
+  
+  .logocandidate img {
+	  width: 70%;
+  }
+  
 	.opportunity:hover .collapsible {
   background-color: #00bcc1;
 }
@@ -264,6 +274,17 @@
   }
   
   .logohome img {
+	  width: 100%;
+	
+  }
+  
+  .logocandidate {
+	  width: 100%;
+	  display: flex;
+	justify-content: center;
+  }
+  
+  .logocandidate img {
 	  width: 100%;
 	
   }
