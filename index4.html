@@ -39,8 +39,21 @@
   <br>
   <br>
   <br>
-    <h1>Welcome to On A Roll!</h1>
-     
+    <h1>Parties and Policies</h1>
+     <div class="card quiz-card">
+  <h2>Party Stance Matcher</h2>
+  <div id="policy-quiz-container">
+    <p id="policy-statement" class="quiz-question">Loading policy statement...</p>
+
+    <div class="quiz-options">
+      <button type="button" class="quiz-btn" onclick="answerPolicy('agree')">Agree</button>
+      <button type="button" class="quiz-btn" onclick="answerPolicy('neutral')">Neutral</button>
+      <button type="button" class="quiz-btn" onclick="answerPolicy('disagree')">Disagree</button>
+    </div>
+
+    <p id="policy-progress" class="quiz-progress"></p>
+  </div>
+</div>
 	
 	
   </body>

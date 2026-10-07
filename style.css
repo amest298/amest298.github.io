@@ -192,6 +192,16 @@
 	  width: 70%;
   }
   
+  .logoenrol {
+	  width: 100%;
+	  display: flex;
+	  justify-content: center; 
+  }
+  
+  .logoenrol img {
+	  width: 70%:
+  }
+  
 	.opportunity:hover .collapsible {
   background-color: #00bcc1;
 }
@@ -234,6 +244,70 @@
 		font-size: 20px;
 	}
 	
+	.quiz-card {
+		text-align: center;
+		padding: 20px;
+	}
+
+	.quiz-question {
+		font-size: 1.1rem;
+		font-weight: bold;
+		margin: 15px 0;
+	}
+
+	.quiz-options {
+		display: flex;
+		justify-content: center;
+		gap: 10px;
+		flex-wrap: wrap;
+		margin-bottom: 15px;
+	}
+
+	.quiz-btn {
+		padding: 10px 18px;
+		font-size: 1rem;
+		cursor: pointer;
+		border-radius: 6px;
+		border: 1px solid #7c3aed;
+		background-color: #f3e8ff;
+		color: #4c1d95;
+		transition: background-color 0.2s ease;
+	}
+
+	.quiz-btn:hover {
+		background-color: #d8b4fe;
+	}
+
+	.quiz-feedback {
+		margin-top: 10px;
+		padding: 10px;
+		border-radius: 5px;
+		font-weight: 500;
+	}
+
+	.quiz-feedback.correct {
+		background-color: #d1fae5;
+		color: #065f46;
+	}
+
+	.quiz-feedback.incorrect {
+		background-color: #fee2e2;
+		color: #991b1b;
+	}
+
+	.next-btn {
+		margin-top: 10px;
+		padding: 8px 16px;
+		background-color: #7c3aed;
+		color: white;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+
+	.next-btn:hover {
+		background-color: #6d28d9;
+	}
 	
 	
 @media only screen and (max-height: 730px) {
