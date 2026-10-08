@@ -368,7 +368,7 @@
 		
 		width: 70%;
   }
-}
+
 
 
 
@@ -393,3 +393,16 @@
 	  width: 100%;
 	
   }
+  
+  .logoerol {
+	  width: 100%;
+	  display: flex;
+	  justify-content: center;
+  }
+  
+  .logoenrol img {
+	  width: 100%;
+  }
+	 
+
+}
