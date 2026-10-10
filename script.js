@@ -56,63 +56,87 @@ document.addEventListener("DOMContentLoaded", function () {
 // --- PARTY MATCHER QUIZ ---
 const policyQuestions = [
   {
-    statement: "The official voting age should be lowered to 16 for General Elections.",
-    partyAlignments: {
-      TPM: "agree",
-      Green: "agree",
-      TOP: "agree",
-      Labour: "neutral",
-      National: "disagree",
-      NZFirst: "disagree",
-      ACT: "disagree"
-    }
-  },
-  {
-    statement: "Taxes should be increased on the wealthy to fund public services and climate action.",
+    statement: "Free public transport should be provided for all students and young people under 25.",
     partyAlignments: {
       Green: "agree",
       TPM: "agree",
-      Labour: "neutral",
-      TOP: "neutral",
-      National: "disagree",
-      NZFirst: "disagree",
-      ACT: "disagree"
-    }
-  },
-  {
-    statement: "Income tax rates should be lowered across middle and lower income brackets.",
-    partyAlignments: {
-      ACT: "agree",
-      National: "agree",
-      TOP: "agree",
-      NZFirst: "agree",
-      Labour: "neutral",
-      Green: "disagree",
-      TPM: "disagree"
-    }
-  },
-  {
-    statement: "Local infrastructure, senior benefits, and stricter law & order policies should be prioritized.",
-    partyAlignments: {
-      NZFirst: "agree",
-      National: "agree",
-      ACT: "agree",
-      Labour: "neutral",
-      TOP: "neutral",
-      Green: "disagree",
-      TPM: "disagree"
-    }
-  },
-  {
-    statement: "Strengthening Treaty of Waitangi principles and expanding Kaupapa Māori governance initiatives.",
-    partyAlignments: {
-      TPM: "agree",
-      Green: "agree",
       Labour: "agree",
       TOP: "neutral",
       National: "disagree",
       NZFirst: "disagree",
       ACT: "disagree"
+    }
+  },
+  {
+    statement: "The government should increase mental health funding and place free counselors in all secondary schools.",
+    partyAlignments: {
+      Green: "agree",
+      TPM: "agree",
+      Labour: "agree",
+      TOP: "agree",
+      NZFirst: "neutral",
+      National: "neutral",
+      ACT: "disagree"
+    }
+  },
+  {
+    statement: "Strict environmental rules should be placed on farming and industry to reach net-zero carbon emissions faster.",
+    partyAlignments: {
+      Green: "agree",
+      TPM: "agree",
+      TOP: "agree",
+      Labour: "agree",
+      NZFirst: "disagree",
+      National: "disagree",
+      ACT: "disagree"
+    }
+  },
+  {
+    statement: "Tougher sentences and youth justice reforms are needed to reduce youth crime and ram raids.",
+    partyAlignments: {
+      ACT: "agree",
+      National: "agree",
+      NZFirst: "agree",
+      Labour: "neutral",
+      TOP: "neutral",
+      Green: "disagree",
+      TPM: "disagree"
+    }
+  },
+  {
+    statement: "Income tax rates should be lowered so workers keep more of their earnings.",
+    partyAlignments: {
+      ACT: "agree",
+      National: "agree",
+      NZFirst: "agree",
+      TOP: "neutral",
+      Labour: "disagree",
+      Green: "disagree",
+      TPM: "disagree"
+    }
+  },
+  {
+    statement: "Rent controls or caps on rent increases should be introduced to make housing affordable for young renters.",
+    partyAlignments: {
+      Green: "agree",
+      TPM: "agree",
+      Labour: "neutral",
+      TOP: "neutral",
+      National: "disagree",
+      NZFirst: "disagree",
+      ACT: "disagree"
+    }
+  },
+  {
+    statement: "Government spending should be significantly reduced to pay down public debt and lower inflation.",
+    partyAlignments: {
+      ACT: "agree",
+      National: "agree",
+      NZFirst: "agree",
+      TOP: "neutral",
+      Labour: "disagree",
+      Green: "disagree",
+      TPM: "disagree"
     }
   }
 ];
