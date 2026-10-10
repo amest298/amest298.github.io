@@ -162,7 +162,7 @@ const partyNames = {
   TOP: "The Opportunity Party (TOP)",
   National: "The National Party",
   NZFirst: "New Zealand First",
-  ACT: "the ACT Party"
+  ACT: "The ACT Party"
 };
 
 function loadPolicyQuestion() {
