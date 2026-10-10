@@ -52,10 +52,11 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
 // --- PARTY MATCHER QUIZ ---
 const policyQuestions = [
   {
-    statement: "Lowering the official voting age to 16 for General Elections.",
+    statement: "The official voting age should be lowered to 16 for General Elections.",
     partyAlignments: {
       TPM: "agree",
       Green: "agree",
@@ -67,7 +68,7 @@ const policyQuestions = [
     }
   },
   {
-    statement: "Increasing taxes on high earners or wealth to fund public services and climate action.",
+    statement: "Taxes should be increased on the wealthy to fund public services and climate action.",
     partyAlignments: {
       Green: "agree",
       TPM: "agree",
@@ -79,7 +80,7 @@ const policyQuestions = [
     }
   },
   {
-    statement: "Cutting income tax rates across middle and lower income brackets.",
+    statement: "Income tax rates should be lowered across middle and lower income brackets.",
     partyAlignments: {
       ACT: "agree",
       National: "agree",
@@ -91,7 +92,7 @@ const policyQuestions = [
     }
   },
   {
-    statement: "Prioritising local infrastructure, senior benefits, and stricter law & order policies.",
+    statement: "Local infrastructure, senior benefits, and stricter law & order policies should be prioritized.",
     partyAlignments: {
       NZFirst: "agree",
       National: "agree",
@@ -118,7 +119,7 @@ const policyQuestions = [
 
 let policyIndex = 0;
 
-// All 7 requested parties initialized at 0
+// All 7 parties initialized at 0
 let partyScores = {
   TPM: 0,
   Labour: 0,
@@ -129,13 +130,13 @@ let partyScores = {
   ACT: 0
 };
 
-// Full name mapping for the final result display
+// Full name mapping for results display
 const partyNames = {
   TPM: "Te Pāti Māori",
-  Labour: "the Labour Party",
-  Green: "the Green Party",
+  Labour: "The Labour Party",
+  Green: "The Green Party",
   TOP: "The Opportunity Party (TOP)",
-  National: "the National Party",
+  National: "The National Party",
   NZFirst: "New Zealand First",
   ACT: "the ACT Party"
 };
@@ -166,30 +167,33 @@ function answerPolicy(userChoice) {
 }
 
 function showPolicyResults() {
-  let topPartyKey = "";
-  let highestScore = -1;
+  const sortedParties = Object.entries(partyScores).sort((a, b) => b[1] - a[1]);
+  const topThree = sortedParties.slice(0, 3);
 
-  for (const [party, score] of Object.entries(partyScores)) {
-    if (score > highestScore) {
-      highestScore = score;
-      topPartyKey = party;
-    }
-  }
+  let resultsHTML = `
+    <h3>Your Top 3 Party Alignments</h3>
+    <ol class="results-list">
+  `;
 
-  const topPartyName = partyNames[topPartyKey] || topPartyKey;
+  topThree.forEach(([partyKey, score]) => {
+    const name = partyNames[partyKey] || partyKey;
+    resultsHTML += `<li><strong>${name}</strong> (${score} match${score === 1 ? '' : 'es'})</li>`;
+  });
 
-  document.getElementById("policy-quiz-container").innerHTML = `
-    <h3>Your Highest Alignment</h3>
-    <p>Based on your choices, your policy preferences align closest with <strong>${topPartyName}</strong>!</p>
+  resultsHTML += `
+    </ol>
+    <br>
     <button type="button" class="next-btn" onclick="resetPolicyQuiz()">Take Quiz Again</button>
   `;
+
+  document.getElementById("policy-quiz-container").innerHTML = resultsHTML;
 }
 
 function resetPolicyQuiz() {
   policyIndex = 0;
   partyScores = { TPM: 0, Labour: 0, Green: 0, TOP: 0, National: 0, NZFirst: 0, ACT: 0 };
   
-  // Re-inject the original quiz structure into the container
+  // Re-inject the original quiz UI structure
   document.getElementById("policy-quiz-container").innerHTML = `
     <p id="policy-statement" class="quiz-question"></p>
     <div class="quiz-options">
