@@ -146,10 +146,10 @@
 	}
 
 	.information {
-			width: 80%;
-			padding-left: 10%;
-			padding-right: 10%;
-			text-align: center;
+		width: 80%;
+		padding-left: 10%;
+		padding-right: 10%;
+		text-align: center;
 	}
 	
 	.information p {
@@ -171,59 +171,61 @@
   }
   
   
-  .logohome {
-	  width: 100%;
-	  display: flex;
-	justify-content: center;
-  }
+	.logohome {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
   
-  .logohome img {
-	  width: 70%;
+	.logohome img {
+		width: 70%;
 	
-  }
+	}
   
-  .logocandidate {
-	  width: 100%;
-	  display: flex;
-	  justify-content: center;
-  }
+	.logocandidate {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
   
-  .logocandidate img {
-	  width: 70%;
-  }
+	.logocandidate img {
+		width: 70%;
+	}
   
-  .logoenrol {
-	  width: 100%;
-	  display: flex;
-	  justify-content: center; 
-  }
+	.logoenrol {
+		width: 100%;
+		display: flex;
+		justify-content: center; 
+	}
   
-  .logoenrol img {
-	  width: 70%;
-  }
+	.logoenrol img {
+		width: 70%;
+	}
   
 	.opportunity:hover .collapsible {
-  background-color: #00bcc1;
-}
+		background-color: #00bcc1;
+	}
 
-.national:hover .collapsible {
-	background-color: #00529f;
-}
+	.national:hover .collapsible {
+		background-color: #00529f;
+	}
 
-.labour:hover .collapsible {
-	background-color: #D82A20;
-}
+	.labour:hover .collapsible {
+		background-color: #D82A20;
+	}
 
 	.act:hover .collapsible   {
-	background-color: #D5067E;
-}
-	 .nzfirst:hover .collapsible {
+		background-color: #D5067E;
+	}
+	
+	
+	.nzfirst:hover .collapsible {
 		 background-color: #545252;
-	 }
+	}
 	 
-	 .green:hover .collapsible {
+	.green:hover .collapsible {
 		 background-color: #098137;
-	 }
+	}
 	
 	.vote {
 		 background-color: #69418a;
@@ -264,6 +266,7 @@
 	}
 
 	.quiz-btn {
+		font-family: 'Rokkitt', serif;
 		padding: 10px 18px;
 		font-size: 1rem;
 		cursor: pointer;
@@ -309,27 +312,25 @@
 		background-color: #6d28d9;
 	}
 	
-#policy-quiz-container ol {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;                  
-  padding: 0;
-  margin: 20px auto;
-  list-style-position: inside; 
-  text-align: center;
-  justify-content: center;
-}
+	#policy-quiz-container ol {
+		display: flex;
+		align-items: center;                 
+		padding: 0;
+		margin: 20px auto;
+		list-style-position: inside; 
+		text-align: center;
+		justify-content: center;
+	}
 
-.results-list {
-  display: flex !important;
-  flex-direction: column !important;
-  align-items: center !important;
-  gap: 12px;
-  padding: 0 !important;
-  margin: 20px auto !important;
-  list-style-position: inside;
-  text-align: center;
+	.results-list {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 12px;
+		padding: 0;
+		margin: 20px;
+		list-style-position: inside;
+		text-align: center;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -433,6 +434,26 @@
   .logoenrol img {
 	  width: 100%;
   }
+  
+#policy-quiz-container .results-list {
+  display: flex;
+  justify-content: center;
+  padding: 0px;
+  margin: 15px;
+  width: 100%;
+}
+
+#policy-quiz-container .results-list li {
+  display: block;
+  width: 85%;
+  max-width: 300px;
+  margin: 6px;
+  padding: 10px 12px;
+  background-color: #cdaee6;
+  color: #222222;
+  border-radius: 8px;
+  text-align: center;
+}
 	 
 
 }
