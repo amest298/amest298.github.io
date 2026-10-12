@@ -350,110 +350,105 @@
 @media only screen and (max-width: 690px) {
  
 
-  ul, li, .breaks {
-    display: none;
-  }
+	ul, li, .breaks {
+		display: none;
+	}
 
-  .mobilenav a.icon {
-    height: 18%;
-    padding-top: 10px;
-    float: right;
-    text-align: center;
-  }
+	.mobilenav a.icon {
+		height: 18%;
+		padding-top: 10px;
+		float: right;
+		text-align: center;
+	}
 
-  .mobilenav {
-    display: block;
-    position: fixed;
-    width: 100%;
-	height: 20%;
-    font-size: 10px;
-    text-align: left;
-  }
+	.mobilenav {
+		display: block;
+		position: fixed;
+		width: 100%;
+		height: 20%;
+		font-size: 10px;
+		text-align: left;
+	}
   
-  .mobilenav #myLinks {
-	  font-size: 30px;
-  }
+	.mobilenav #myLinks {
+		font-size: 30px;
+	}
 
 	.collapsible {
 		height: 30%;
 	}
 
-
-
-  .breaks1, .card {
-    display: block;
-  }
+	.breaks1, .card {
+		display: block;
+	}
   
-  .information p {
-	  size: 15px;
-  }
+	.information p {
+		size: 15px;
+	}
   
-  .candidatePhotos {
-	  width: 100%;
-	  display: block;
+	.candidatePhotos {
+		width: 100%;
+		display: block;
 		justify-content: center;
-  }
+	}
   
   
-  .candidatePhotos img {
-		
+	.candidatePhotos img {
 		width: 70%;
-  }
+	}
 
 
-
-
- .logohome {
-	  width: 100%;
-	  display: flex;
-	justify-content: center;
-  }
+	.logohome {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
   
-  .logohome img {
+	.logohome img {
 	  width: 100%;
 	
-  }
+	}
   
-  .logocandidate {
-	  width: 100%;
-	  display: flex;
-	justify-content: center;
-  }
+	.logocandidate {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
   
   .logocandidate img {
 	  width: 100%;
 	
   }
   
-  .logoerol {
-	  width: 100%;
-	  display: flex;
-	  justify-content: center;
-  }
+	.logoerol {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
   
-  .logoenrol img {
-	  width: 100%;
-  }
+	.logoenrol img {
+		width: 100%;
+	}
   
-#policy-quiz-container .results-list {
-  display: flex;
-  justify-content: center;
-  padding: 0px;
-  margin: 15px;
-  width: 100%;
-}
+	#policy-quiz-container .results-list {
+		display: flex;
+		justify-content: center;
+		padding: 0px;
+		margin: 15px;
+		width: 100%;
+	}
 
-#policy-quiz-container .results-list li {
-  display: block;
-  width: 85%;
-  max-width: 300px;
-  margin: 6px;
-  padding: 10px 12px;
-  background-color: #cdaee6;
-  color: #222222;
-  border-radius: 8px;
-  text-align: center;
-}
+	#policy-quiz-container .results-list li {
+		display: block;
+		width: 85%;
+		max-width: 300px;
+		margin: 6px;
+		padding: 10px 12px;
+		background-color: #cdaee6;
+		color: #222222;
+		border-radius: 8px;
+		text-align: center;
+	}
 	 
 
 }
