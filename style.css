@@ -199,7 +199,7 @@
   }
   
   .logoenrol img {
-	  width: 70%:
+	  width: 70%;
   }
   
 	.opportunity:hover .collapsible {
@@ -332,7 +332,13 @@
   text-align: center;
 }
 
+@media only screen and (min-width: 1000px) {
 	
+	.linkbox {
+	font-size: 35px;
+	}
+
+}
 	
 @media only screen and (max-height: 730px) {
   ul {

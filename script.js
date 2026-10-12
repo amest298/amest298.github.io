@@ -59,7 +59,6 @@ const policyQuestions = [
     statement: "Free public transport should be provided for all students and young people under 25.",
     partyAlignments: {
       Green: "agree",
-      TPM: "agree",
       Labour: "agree",
       TOP: "neutral",
       National: "disagree",
@@ -71,7 +70,6 @@ const policyQuestions = [
     statement: "The government should increase mental health funding and place free counselors in all secondary schools.",
     partyAlignments: {
       Green: "agree",
-      TPM: "agree",
       Labour: "agree",
       TOP: "agree",
       NZFirst: "neutral",
@@ -83,7 +81,6 @@ const policyQuestions = [
     statement: "Strict environmental rules should be placed on farming and industry to reach net-zero carbon emissions faster.",
     partyAlignments: {
       Green: "agree",
-      TPM: "agree",
       TOP: "agree",
       Labour: "agree",
       NZFirst: "disagree",
@@ -99,8 +96,7 @@ const policyQuestions = [
       NZFirst: "agree",
       Labour: "neutral",
       TOP: "neutral",
-      Green: "disagree",
-      TPM: "disagree"
+      Green: "disagree"
     }
   },
   {
@@ -112,14 +108,12 @@ const policyQuestions = [
       TOP: "neutral",
       Labour: "disagree",
       Green: "disagree",
-      TPM: "disagree"
     }
   },
   {
-    statement: "Rent controls or caps on rent increases should be introduced to make housing affordable for young renters.",
+    statement: "Rent controls, or caps on rent increases should be introduced to make housing affordable for young renters.",
     partyAlignments: {
       Green: "agree",
-      TPM: "agree",
       Labour: "neutral",
       TOP: "neutral",
       National: "disagree",
@@ -135,8 +129,7 @@ const policyQuestions = [
       NZFirst: "agree",
       TOP: "neutral",
       Labour: "disagree",
-      Green: "disagree",
-      TPM: "disagree"
+      Green: "disagree"
     }
   }
 ];
