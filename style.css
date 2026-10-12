@@ -331,7 +331,27 @@
 		margin: 20px;
 		list-style-position: inside;
 		text-align: center;
-}
+	}
+
+	.maptext {
+		width: 60%;
+		border-style: double;
+		border-color: #FFFFFF;
+		float: left;
+	}
+	
+	.electoratemap {
+		width: 30%;
+		float: left;
+	}
+	
+	.electoratemap h2 {
+		text-align: right;
+	}
+	
+	.electoratemap img {
+		width: 100%;
+	}
 
 @media only screen and (min-width: 1000px) {
 	
