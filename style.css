@@ -201,6 +201,16 @@
 	.logoenrol img {
 		width: 70%;
 	}
+	
+	.logoparties {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	
+	.logoparties img {
+		width: 70%;
+	}
   
 	.opportunity:hover .collapsible {
 		background-color: #00bcc1;
@@ -335,8 +345,6 @@
 
 	.maptext {
 		width: 60%;
-		border-style: double;
-		border-color: #FFFFFF;
 		float: left;
 	}
 	
@@ -359,6 +367,10 @@
 	font-size: 35px;
 	}
 
+	 p {
+		font-size: 25px;
+	}
+
 }
 	
 @media only screen and (max-height: 730px) {
@@ -375,7 +387,7 @@
 	}
 
 	.mobilenav a.icon {
-		height: 18%;
+		height: 22%;
 		padding-top: 10px;
 		float: right;
 		text-align: center;
@@ -391,6 +403,11 @@
 	}
   
 	.mobilenav #myLinks {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		margin-top: 0;
+		padding-top: 0;
 		font-size: 30px;
 	}
 
@@ -469,6 +486,12 @@
 		border-radius: 8px;
 		text-align: center;
 	}
+	
+	.electoratemap {
+		width: 100%;
+	}
+	
+	
 	 
 
 }
