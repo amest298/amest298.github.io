@@ -457,13 +457,23 @@
 	
   }
   
-	.logoerol {
+	.logoenrol {
 		width: 100%;
 		display: flex;
 		justify-content: center;
 	}
   
 	.logoenrol img {
+		width: 100%;
+	}
+	
+	.logoparties {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	
+	.logoparties img {
 		width: 100%;
 	}
   
