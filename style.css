@@ -445,6 +445,10 @@
 	  width: 100%;
 	
 	}
+	
+	.logohome br {
+		display: none;
+	}
   
 	.logocandidate {
 		width: 100%;
@@ -457,6 +461,10 @@
 	
   }
   
+  .logocandidate br {
+		display: none;
+  }
+  
 	.logoenrol {
 		width: 100%;
 		display: flex;
@@ -467,6 +475,10 @@
 		width: 100%;
 	}
 	
+	.logoenrol br {
+		display: none;
+	}
+	
 	.logoparties {
 		width: 100%;
 		display: flex;
@@ -475,6 +487,10 @@
 	
 	.logoparties img {
 		width: 100%;
+	}
+	
+	.logoparties br {
+		display: none;
 	}
   
 	#policy-quiz-container .results-list {
