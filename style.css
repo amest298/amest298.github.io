@@ -183,6 +183,7 @@
   
 	.logohome img {
 		width: 70%;
+		padding-top: 3vh;
 	
 	}
   
@@ -194,6 +195,7 @@
   
 	.logocandidate img {
 		width: 70%;
+		padding-top: 5vh;
 	}
   
 	.logoenrol {
@@ -204,12 +206,14 @@
   
 	.logoenrol img {
 		width: 70%;
+		padding-top: 5vh;
 	}
 	
 	.logoparties {
 		width: 100%;
 		display: flex;
 		justify-content: center;
+		padding-top: 5vh;
 	}
 	
 	.logoparties  br {
@@ -383,7 +387,7 @@
 	}
 
 	 p {
-		font-size: 25px;
+		padding-top: 5vh;
 	}
 
 }
