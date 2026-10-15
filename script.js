@@ -78,14 +78,14 @@ const policyQuestions = [
     }
   },
   {
-    statement: "Strict environmental rules should be placed on farming and industry to reach net-zero carbon emissions faster.",
+    statement: "There should be no environmental restrictions place on farms.",
     partyAlignments: {
-      Green: "agree",
-      TOP: "agree",
-      Labour: "agree",
-      NZFirst: "disagree",
-      National: "disagree",
-      ACT: "disagree"
+      Green: "disagree",
+      TOP: "disagree",
+      Labour: "disagree",
+      NZFirst: "agree",
+      National: "agree",
+      ACT: "agree"
     }
   },
   {

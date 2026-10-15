@@ -177,6 +177,10 @@
 		justify-content: center;
 	}
   
+	.logohome br {
+		display: block;
+	}
+  
 	.logohome img {
 		width: 70%;
 	
@@ -206,6 +210,10 @@
 		width: 100%;
 		display: flex;
 		justify-content: center;
+	}
+	
+	.logoparties  br {
+		display: block;
 	}
 	
 	.logoparties img {
@@ -360,6 +368,13 @@
 	.electoratemap img {
 		width: 100%;
 	}
+	
+	iframe {
+		height: 100vh;
+		width: 80%;
+	}
+	
+		
 
 @media only screen and (min-width: 1000px) {
 	
