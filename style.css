@@ -51,7 +51,7 @@
 		padding: 0;
 		overflow: hidden;
 		background-color: #69418a;
-		position: fixed;
+		position: relative;
 		top: 0;
 		width: 100%;
 		height: 10%;
@@ -171,65 +171,19 @@
   }
   
   
-	.logohome {
+
+	.logobanner {
 		width: 100%;
 		display: flex;
 		justify-content: center;
-	}
-  
-	.logohome br {
-		display: block;
-	}
-  
-	.logohome img {
-		width: 70%;
-		padding-top: 3vh;
-	
-	}
-  
-	.logocandidate {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-	}
-  
-	.logocandidate img {
-		width: 70%;
-		padding-top: 5vh;
-	}
-  
-	.logoenrol {
-		width: 100%;
-		display: flex;
-		justify-content: center; 
-	}
-  
-	.logoenrol img {
-		width: 70%;
-		padding-top: 5vh;
+		padding-top: 1vh;
 	}
 	
-	.logoparties {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-		padding-top: 5vh;
-	}
-	
-	.logoparties  br {
-		display: block;
-	}
-	
-	.logoparties img {
+	.logobanner img {
 		width: 70%;
 	}
 	
-	
-	.bannerphotos {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-	}
+
   
 	.opportunity:hover .collapsible {
 		background-color: #00bcc1;
@@ -385,6 +339,22 @@
 		width: 80%;
 	}
 	
+	 .marquee {
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
+    .marquee span {
+        display: inline-block;
+        padding-left: 0%;
+        animation: marquee 15s linear infinite;
+    }
+	
+	@keyframes marquee {
+    0%   { transform: translate(0, 0); }
+    100% { transform: translate(-40%, 0); }
+}
 		
 
 @media only screen and (min-width: 1000px) {
