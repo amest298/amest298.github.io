@@ -223,6 +223,13 @@
 	.logoparties img {
 		width: 70%;
 	}
+	
+	
+	.bannerphotos {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
   
 	.opportunity:hover .collapsible {
 		background-color: #00bcc1;
