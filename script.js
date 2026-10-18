@@ -224,41 +224,46 @@ function resetPolicyQuiz() {
   loadPolicyQuestion();
 }
 
-// Initialize on page load
+function startCountdown(targetDateString, elementId, expiredMessage = "EXPIRED") {
+  const targetElement = document.getElementById(elementId);
+  
+  if (!targetElement) return;
+
+  const countDownDate = new Date(targetDateString).getTime();
+
+  function updateTimer() {
+    const now = new Date().getTime();
+    const distance = countDownDate - now;
+
+    if (distance < 0) {
+      targetElement.innerHTML = expiredMessage;
+      return true; // Timer finished
+    }
+
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    targetElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    return false;
+  }
+
+  // Run immediately so "Loading countdown..." disappears instantly
+  const expired = updateTimer();
+
+  // If not expired, update every second
+  if (!expired) {
+    const timer = setInterval(function () {
+      if (updateTimer()) {
+        clearInterval(timer);
+      }
+    }, 1000);
+  }
+}
+
 document.addEventListener("DOMContentLoaded", function () {
-  if (document.getElementById("policy-statement")) {
-    loadPolicyQuestion();
-  }
-  
-  
-  
-  var countDownDate = new Date("Nov 7, 2026 00:00:01").getTime();
-
-// Update the count down every 1 second
-var x = setInterval(function() {
-
-  // Get today's date and time
-  var now = new Date().getTime();
-    
-  // Find the distance between now and the count down date
-  var distance = countDownDate - now;
-    
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  // Output the result in an element with id="demo"
-  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-  }
-}, 1000);
-
-
+  startCountdown("Nov 7, 2026 00:00:01", "election-countdown", "Voting Open!");
+  startCountdown("Oct 25, 2026 00:00:01", "enrolment-countdown", "Enrolment Closed!");
 });
+
