@@ -24,7 +24,6 @@
 		text-align: center;
 		font-size: 20px;
 	}
-	
 
 
 	p {
@@ -183,7 +182,6 @@
 		width: 70%;
 	}
 	
-
   
 	.opportunity:hover .collapsible {
 		background-color: #00bcc1;
@@ -383,7 +381,7 @@
 	}
 
 	.mobilenav a.icon {
-		height: 22%;
+		height: 60%;
 		padding-top: 10px;
 		float: right;
 		text-align: center;
@@ -391,7 +389,7 @@
 
 	.mobilenav {
 		display: block;
-		position: fixed;
+		position: relative;
 		width: 100%;
 		height: 20%;
 		font-size: 10px;
@@ -405,6 +403,8 @@
 		margin-top: 0;
 		padding-top: 0;
 		font-size: 30px;
+		background-color: #5c357f; /* Solid purple background to hide marquee text */
+		z-index: 9999;            /* Forces menu to sit on top of all page content */
 	}
 
 	.collapsible {
@@ -431,64 +431,18 @@
 	}
 
 
-	.logohome {
+	.logobanner {
 		width: 100%;
 		display: flex;
 		justify-content: center;
 	}
   
-	.logohome img {
+	.logobanner img {
 	  width: 100%;
+	  padding-top: 0vh;
 	
 	}
 	
-	.logohome br {
-		display: none;
-	}
-  
-	.logocandidate {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-	}
-  
-  .logocandidate img {
-	  width: 100%;
-	
-  }
-  
-  .logocandidate br {
-		display: none;
-  }
-  
-	.logoenrol {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-	}
-  
-	.logoenrol img {
-		width: 100%;
-	}
-	
-	.logoenrol br {
-		display: none;
-	}
-	
-	.logoparties {
-		width: 100%;
-		display: flex;
-		justify-content: center;
-	}
-	
-	.logoparties img {
-		width: 100%;
-	}
-	
-	.logoparties br {
-		display: none;
-	}
-  
 	#policy-quiz-container .results-list {
 		display: flex;
 		justify-content: center;
@@ -521,4 +475,10 @@
 		width: 100%;
 		height: 90vh;
 	}
+	
+	.marquee {
+        padding-top: 1vh;
+        white-space: nowrap;
+        overflow: hidden;
+    }
 }
