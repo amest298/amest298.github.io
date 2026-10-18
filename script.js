@@ -1,5 +1,6 @@
+// --- DOB CALCULATOR ---
 function getDOB() {
-  const dobInput = document.getElementById('inputDob').value;
+  const dobInput = document.getElementById('inputDob')?.value;
 
   if (!dobInput) {
     alert('Please enter your Date of Birth.');
@@ -18,136 +19,50 @@ function getDOB() {
 
   const resultElement = document.getElementById('currentAge');
 
-  if (age >= 18) {
-    resultElement.textContent = `Your age on Nov 7, 2026 will be ${age} years old. You will be old enough to vote in the 2026 General Election!`;
-  } else {
-    resultElement.textContent = `Your age on Nov 7, 2026 will be ${age} years old. You will not be old enough to vote in the 2026 General Election.`;
+  if (resultElement) {
+    if (age >= 18) {
+      resultElement.textContent = `Your age on Nov 7, 2026 will be ${age} years old. You will be old enough to vote in the 2026 General Election!`;
+    } else {
+      resultElement.textContent = `Your age on Nov 7, 2026 will be ${age} years old. You will not be old enough to vote in the 2026 General Election.`;
+    }
   }
 }
 
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
-  } else {
-    x.style.display = "block";
-  }
-}
-
-document.addEventListener("DOMContentLoaded", function () {
-  var coll = document.getElementsByClassName("collapsible");
-  var i;
-
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function () {
-      this.classList.toggle("active");
-      var content = this.nextElementSibling;
-      if (content.style.maxHeight) {
-        content.style.maxHeight = null;
-      } else {
-        content.style.maxHeight = content.scrollHeight + "px";
-      }
-    });
-  }
-});
-
-
-
-// --- PARTY MATCHER QUIZ ---
+// --- PARTY MATCHER QUIZ DATA ---
 const policyQuestions = [
   {
     statement: "Free public transport should be provided for all students and young people under 25.",
-    partyAlignments: {
-      Green: "agree",
-      Labour: "agree",
-      TOP: "neutral",
-      National: "disagree",
-      NZFirst: "disagree",
-      ACT: "disagree"
-    }
+    partyAlignments: { Green: "agree", Labour: "agree", TOP: "neutral", National: "disagree", NZFirst: "disagree", ACT: "disagree" }
   },
   {
     statement: "The government should increase mental health funding and place free counselors in all secondary schools.",
-    partyAlignments: {
-      Green: "agree",
-      Labour: "agree",
-      TOP: "agree",
-      NZFirst: "neutral",
-      National: "neutral",
-      ACT: "disagree"
-    }
+    partyAlignments: { Green: "agree", Labour: "agree", TOP: "agree", NZFirst: "neutral", National: "neutral", ACT: "disagree" }
   },
   {
-    statement: "There should be no environmental restrictions place on farms.",
-    partyAlignments: {
-      Green: "disagree",
-      TOP: "disagree",
-      Labour: "disagree",
-      NZFirst: "agree",
-      National: "agree",
-      ACT: "agree"
-    }
+    statement: "There should be no environmental restrictions placed on farms.",
+    partyAlignments: { Green: "disagree", TOP: "disagree", Labour: "disagree", NZFirst: "agree", National: "agree", ACT: "agree" }
   },
   {
     statement: "Tougher sentences and youth justice reforms are needed to reduce youth crime and ram raids.",
-    partyAlignments: {
-      ACT: "agree",
-      National: "agree",
-      NZFirst: "agree",
-      Labour: "neutral",
-      TOP: "neutral",
-      Green: "disagree"
-    }
+    partyAlignments: { ACT: "agree", National: "agree", NZFirst: "agree", Labour: "neutral", TOP: "neutral", Green: "disagree" }
   },
   {
     statement: "Income tax rates should be lowered so workers keep more of their earnings.",
-    partyAlignments: {
-      ACT: "agree",
-      National: "agree",
-      NZFirst: "agree",
-      TOP: "neutral",
-      Labour: "disagree",
-      Green: "disagree",
-    }
+    partyAlignments: { ACT: "agree", National: "agree", NZFirst: "agree", TOP: "neutral", Labour: "disagree", Green: "disagree" }
   },
   {
     statement: "Rent controls, or caps on rent increases should be introduced to make housing affordable for young renters.",
-    partyAlignments: {
-      Green: "agree",
-      Labour: "neutral",
-      TOP: "neutral",
-      National: "disagree",
-      NZFirst: "disagree",
-      ACT: "disagree"
-    }
+    partyAlignments: { Green: "agree", Labour: "neutral", TOP: "neutral", National: "disagree", NZFirst: "disagree", ACT: "disagree" }
   },
   {
     statement: "Government spending should be significantly reduced to pay down public debt and lower inflation.",
-    partyAlignments: {
-      ACT: "agree",
-      National: "agree",
-      NZFirst: "agree",
-      TOP: "neutral",
-      Labour: "disagree",
-      Green: "disagree"
-    }
+    partyAlignments: { ACT: "agree", National: "agree", NZFirst: "agree", TOP: "neutral", Labour: "disagree", Green: "disagree" }
   }
 ];
 
 let policyIndex = 0;
+let partyScores = { TPM: 0, Labour: 0, Green: 0, TOP: 0, National: 0, NZFirst: 0, ACT: 0 };
 
-// All 7 parties initialized at 0
-let partyScores = {
-  TPM: 0,
-  Labour: 0,
-  Green: 0,
-  TOP: 0,
-  National: 0,
-  NZFirst: 0,
-  ACT: 0
-};
-
-// Full name mapping for results display
 const partyNames = {
   TPM: "Te Pāti Māori",
   Labour: "The Labour Party",
@@ -160,14 +75,16 @@ const partyNames = {
 
 function loadPolicyQuestion() {
   const current = policyQuestions[policyIndex];
-  document.getElementById("policy-statement").textContent = current.statement;
-  document.getElementById("policy-progress").textContent = `Question ${policyIndex + 1} of ${policyQuestions.length}`;
+  const statementEl = document.getElementById("policy-statement");
+  const progressEl = document.getElementById("policy-progress");
+
+  if (statementEl) statementEl.textContent = current.statement;
+  if (progressEl) progressEl.textContent = `Question ${policyIndex + 1} of ${policyQuestions.length}`;
 }
 
 function answerPolicy(userChoice) {
   const current = policyQuestions[policyIndex];
 
-  // Award points if the user's choice matches the party's stance
   for (const [party, position] of Object.entries(current.partyAlignments)) {
     if (userChoice === position) {
       partyScores[party] += 1;
@@ -200,33 +117,56 @@ function showPolicyResults() {
   resultsHTML += `
     </ol>
     <br>
-    <button type="button" class="next-btn" onclick="resetPolicyQuiz()">Take Quiz Again</button>
+    <button type="button" class="next-btn" id="resetQuizBtn">Take Quiz Again</button>
   `;
 
-  document.getElementById("policy-quiz-container").innerHTML = resultsHTML;
+  const container = document.getElementById("policy-quiz-container");
+  if (container) {
+    container.innerHTML = resultsHTML;
+    const resetBtn = document.getElementById("resetQuizBtn");
+    if (resetBtn) {
+      resetBtn.addEventListener("click", resetPolicyQuiz);
+    }
+  }
 }
 
 function resetPolicyQuiz() {
   policyIndex = 0;
   partyScores = { TPM: 0, Labour: 0, Green: 0, TOP: 0, National: 0, NZFirst: 0, ACT: 0 };
-  
-  // Re-inject the original quiz UI structure
-  document.getElementById("policy-quiz-container").innerHTML = `
-    <p id="policy-statement" class="quiz-question"></p>
-    <div class="quiz-options">
-      <button type="button" class="quiz-btn" onclick="answerPolicy('agree')">Agree</button>
-      <button type="button" class="quiz-btn" onclick="answerPolicy('neutral')">Neutral</button>
-      <button type="button" class="quiz-btn" onclick="answerPolicy('disagree')">Disagree</button>
-    </div>
-    <p id="policy-progress" class="quiz-progress"></p>
-  `;
-  
-  loadPolicyQuestion();
+
+  const container = document.getElementById("policy-quiz-container");
+  if (container) {
+    container.innerHTML = `
+      <p id="policy-statement" class="quiz-question"></p>
+      <div class="quiz-options">
+        <button type="button" class="quiz-btn" data-choice="agree">Agree</button>
+        <button type="button" class="quiz-btn" data-choice="neutral">Neutral</button>
+        <button type="button" class="quiz-btn" data-choice="disagree">Disagree</button>
+      </div>
+      <p id="policy-progress" class="quiz-progress"></p>
+    `;
+    attachQuizButtonListeners();
+    loadPolicyQuestion();
+  }
 }
 
+function attachQuizButtonListeners() {
+  const container = document.getElementById("policy-quiz-container");
+  if (container) {
+    container.onclick = function (e) {
+      if (e.target && e.target.classList.contains("quiz-btn")) {
+        const choice = e.target.getAttribute("data-choice");
+        if (choice) {
+          answerPolicy(choice);
+        }
+      }
+    };
+  }
+}
+
+// --- COUNTDOWN TIMER ---
 function startCountdown(targetDateString, elementId, expiredMessage = "EXPIRED") {
   const targetElement = document.getElementById(elementId);
-  
   if (!targetElement) return;
 
   const countDownDate = new Date(targetDateString).getTime();
@@ -237,7 +177,7 @@ function startCountdown(targetDateString, elementId, expiredMessage = "EXPIRED")
 
     if (distance < 0) {
       targetElement.innerHTML = expiredMessage;
-      return true; // Timer finished
+      return true;
     }
 
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -249,10 +189,7 @@ function startCountdown(targetDateString, elementId, expiredMessage = "EXPIRED")
     return false;
   }
 
-  // Run immediately so "Loading countdown..." disappears instantly
   const expired = updateTimer();
-
-  // If not expired, update every second
   if (!expired) {
     const timer = setInterval(function () {
       if (updateTimer()) {
@@ -262,8 +199,50 @@ function startCountdown(targetDateString, elementId, expiredMessage = "EXPIRED")
   }
 }
 
-document.addEventListener("DOMContentLoaded", function () {
+// --- INITIALIZATION ---
+function initApp() {
+  // 1. Start Countdowns
   startCountdown("Nov 7, 2026 00:00:01", "election-countdown", "Voting Open!");
   startCountdown("Oct 25, 2026 00:00:01", "enrolment-countdown", "Enrolment Closed!");
-});
 
+  // 2. Navigation Listener
+  const menuToggle = document.getElementById("menuToggle");
+  const myLinks = document.getElementById("myLinks");
+  if (menuToggle && myLinks) {
+    menuToggle.addEventListener("click", function (e) {
+      e.preventDefault();
+      myLinks.style.display = (myLinks.style.display === "block") ? "none" : "block";
+    });
+  }
+
+  // 3. Collapsible Accordions
+  const coll = document.getElementsByClassName("collapsible");
+  Array.from(coll).forEach(button => {
+    button.addEventListener("click", function () {
+      this.classList.toggle("active");
+      const content = this.nextElementSibling;
+      if (content) {
+        content.style.maxHeight = content.style.maxHeight ? null : content.scrollHeight + "px";
+      }
+    });
+  });
+
+  // 4. DOB Check Button
+  const dobBtn = document.getElementById("dobSubmitBtn");
+  if (dobBtn) {
+    dobBtn.addEventListener("click", getDOB);
+  }
+
+  // 5. Initialize Quiz
+  if (document.getElementById("policy-quiz-container")) {
+    attachQuizButtonListeners();
+    loadPolicyQuestion();
+  }
+}
+
+// Safe DOM Ready Listener
+if (document.readyState === "loading") {
+  document.addEventListener("DOMContentLoaded", initApp);
+} else {
+  initApp();
+}
