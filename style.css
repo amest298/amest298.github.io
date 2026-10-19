@@ -495,4 +495,12 @@
         white-space: nowrap;
         overflow: hidden;
     }
+	
+	.electoratelink {
+		width: 100%;
+	}
+	
+	.electoratelink img {
+		width: 35vh;
+	}
 }
