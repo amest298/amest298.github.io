@@ -400,6 +400,11 @@
 		float: right;
 		text-align: center;
 	}
+	
+	.mobilenav .active {
+		font-weight: 300;
+		font-size: 15px;
+	}
 
 	.mobilenav {
 		display: block;
@@ -420,6 +425,12 @@
 		background-color: #5c357f; /* Solid purple background to hide marquee text */
 		z-index: 9999;            /* Forces menu to sit on top of all page content */
 	}
+
+
+	h1 {
+		font-size: 40px;
+	}
+
 
 	.collapsible {
 		height: 30%;
