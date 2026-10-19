@@ -398,31 +398,19 @@
 		width: 100%;
 		overflow-x: hidden;
 	}
-	
-	.mobilenav a.icon {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: 40px;
-		height: 40px;
-		color: #ffffff;
-		font-size: 22px;
-		text-decoration: none;
-	}
 
-	.mobilenav a.icon i {
-		color: #ffffff;
-	}
-	.mobilenav .active {
-		font-weight: 300;
-		font-size: 20px;
+	.mobilenav a.icon {
+		height: 60%;
+		padding-top: 10px;
+		float: right;
+		text-align: center;
 	}
 
 	.mobilenav {
-		display: flex;
+		display: block;
 		position: relative;
 		width: 100%;
-		height: 50px;
+		height: 20%;
 		font-size: 10px;
 		text-align: left;
 	}
@@ -433,11 +421,10 @@
 		width: 100%;
 		margin-top: 0;
 		padding-top: 0;
-		font-size: 20px;
+		font-size: 30px;
 		background-color: #5c357f; /* Solid purple background to hide marquee text */
 		z-index: 9999;            /* Forces menu to sit on top of all page content */
 	}
-
 
 	h1 {
 		font-size: 40px;
