@@ -108,7 +108,7 @@
 		position: absolute;
 		right: 0;
 		top: 0;
-		height: 4%;
+		height: 60%;
 		width: 10%;
 		background-color: #69418a;
 		text-align: center;
@@ -397,13 +397,6 @@
 	body, html {
 		width: 100%;
 		overflow-x: hidden;
-	}
-
-	.mobilenav a.icon {
-		height: 60%;
-		padding-top: 10px;
-		float: right;
-		text-align: center;
 	}
 
 	.mobilenav {
