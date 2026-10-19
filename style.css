@@ -393,7 +393,12 @@
 	ul, li, .breaks {
 		display: none;
 	}
-
+	
+	body, html {
+		width: 100%;
+		overflow-x: hidden;
+	}
+	
 	.mobilenav a.icon {
 		display: flex;
 		float: right;
