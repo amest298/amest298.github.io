@@ -395,6 +395,7 @@
 	}
 
 	.mobilenav a.icon {
+		display: flex;
 		float: right;
 		height: 100%;
 		padding: 10px 15px;
