@@ -395,12 +395,18 @@
 	}
 
 	.mobilenav a.icon {
-		height: 60%;
-		padding-top: 10px;
 		float: right;
+		height: 100%;
+		padding: 10px 15px;
 		text-align: center;
+		color: #ffffff;        
+		font-size: 22px;      
+		text-decoration: none;
 	}
-	
+
+	.mobilenav a.icon i {
+		color: #ffffff;
+	}
 	.mobilenav .active {
 		font-weight: 300;
 		font-size: 15px;
