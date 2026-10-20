@@ -323,10 +323,11 @@
 	.maptext {
 		width: 60%;
 		float: left;
+		margin-left: 3vh;
 	}
 	
 	.electoratemap {
-		width: 39%;
+		width: 37%;
 		float: left;
 	}
 	
@@ -381,6 +382,12 @@
 	 p {
 		padding-top: 5vh;
 	}
+
+	
+	.electoratemap img {
+		width: 80%;
+	}
+
 
 }
 	
