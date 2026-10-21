@@ -418,11 +418,7 @@
 		display: none;
 	}
 	
-	body, html {
-		width: 100%;
-		overflow-x: hidden;
-	}
-
+	
 	.mobilenav {
 		display: block;
 		position: relative;
@@ -510,6 +506,10 @@
 	
 	.maptext {
 		width: 100%;
+		padding-left: 2px;
+		padding-right: 2px;
+		text-align: center;
+		float: left;
 	}
 	 
 	iframe {
@@ -532,12 +532,8 @@
 		width: 35vh;
 	}
 	
-	.maptext {
-		padding-left: 2px;
-		padding-right: 2px;
-	}
 	
 	.mobilenav .active {
-			font-size: 2vh;
+			font-size: 4vh;
 	}
 }
