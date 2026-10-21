@@ -536,4 +536,8 @@
 		padding-left: 2px;
 		padding-right: 2px;
 	}
+	
+	.mobilenav .active {
+			font-size: 2vh;
+	}
 }
