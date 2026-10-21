@@ -375,12 +375,23 @@
 
 @media only screen and (min-width: 1000px) {
 	
-	.linkbox {
-	font-size: 35px;
+	
+	ul {
+		height: 10vh;
 	}
+	
+	li a {
+		font-size: 30px;
+	}
+
 
 	 p {
 		padding-top: 5vh;
+		font-size: 27px;
+	}
+	
+	h3 {
+		font-size: 33px;
 	}
 
 	
