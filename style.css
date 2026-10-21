@@ -539,14 +539,14 @@
 	.electoratemap {
 		width: 100%;
 	}
-	
 	.maptext {
-		width: 100%;
-		padding-left: 2px;
-		padding-right: 2px;
-		text-align: center;
-		float: left;
-	}
+  width: 100%;
+  padding-left: 15px;  /* Adds enough margin space on the left */
+  padding-right: 15px; /* Adds enough margin space on the right */
+  box-sizing: border-box; /* Ensures padding stays INSIDE the 100% width */
+  text-align: center;
+  /* float: left; - REMOVED to stop horizontal overflow */
+}
 	 
 	iframe {
 		width: 100%;
