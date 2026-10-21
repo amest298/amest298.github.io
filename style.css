@@ -531,4 +531,8 @@
 	.electoratelink img {
 		width: 35vh;
 	}
+	
+	.maptext {
+		margin-left: 5px;
+	}
 }
