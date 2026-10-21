@@ -373,6 +373,18 @@
 			width: 50vh;
 		}
 
+	
+@media only screen and (max-height: 1000px) {
+  ul {
+    height: 10vh;
+  }
+  
+  li a {
+	  font-size: 20px;
+  }
+}
+
+
 @media only screen and (min-width: 1400px) {
 	
 	
@@ -404,12 +416,7 @@
 
 
 }
-	
-@media only screen and (max-height: 730px) {
-  ul {
-    height: 11.7%;
-  }
-}
+
 
 @media only screen and (max-width: 690px) {
  
@@ -534,6 +541,6 @@
 	
 	
 	.mobilenav .active {
-			font-size: 4vh;
+			font-size: 6vh;
 	}
 }
